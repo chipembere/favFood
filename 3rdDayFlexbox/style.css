@@ -1,0 +1,56 @@
+/* This is the main flex box and it must be called for any child flexing to work */
+.flex-main {
+  display: flex;
+}
+
+/* Wild-carding everything gets box-sized. */
+* {
+  box-sizing: border-box;
+}
+.pane1 {
+  border: 2px solid rebeccapurple;
+  background-color: salmon;
+  display: flex;
+  width: 30%;
+  height: 200px;
+  margin: 10px 20px;
+  background-origin: border-box;
+}
+.pane2 {
+  border: 2px solid rebeccapurple;
+  background-color: salmon;
+  display: flex;
+  width: 30%;
+  height: 200px;
+  padding: 20px;
+}
+.pane3 {
+  border: 2px solid rebeccapurple;
+  background-color: salmon;
+  display: flex;
+  width: 30%;
+  height: 200px;
+  margin: 10px 20px;
+  background-origin: border-box;
+}
+
+/* Introduce columns. Creat columns within flex box almost like mimicking grid within flexbox */
+
+.col-1 {
+  width: 10;
+}
+.col-2 {
+  width: 60;
+}
+.col-3 {
+  width: 20;
+}
+.col-4 {
+  width: 10;
+}
+
+[class="col"] {
+  float: left;
+  padding: 15px;
+  border: 1px saddlebrown;
+}
